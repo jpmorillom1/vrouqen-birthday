@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UCE - Sistema Académico</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Landing Page Interactiva</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="btn" onclick="entrar()">
-    <!-- Icono birrete -->
-    <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-      <path d="M4 26l28-14 28 14-28 14L4 26z"/>
-      <path d="M14 34v8c0 3 9 8 18 8s18-5 18-8v-8" fill="none" stroke="#0b66b7" stroke-width="4" stroke-linejoin="round"/>
-      <circle cx="58" cy="26" r="3"/>
-      <path d="M58 29v10" stroke="#0b66b7" stroke-width="4" stroke-linecap="round"/>
-    </svg>
+  <img id="background-gif" src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Preferentialconcentration.gif" alt="Starfield Background">
+  <div id="collage-container"></div>
+
+  <div class="content">
+    <div class="content-card">
+      <h1>feli cum :3</h1>
+      <p>Mi pana vrouqen que tengas un feliz cumpleaños amigos, te quiero muchisimo. enserio considero tu amistad como la mas valiosa y espero que sigamos siendo cumamigos hasta el infinito. que la pases increible y ojala verte pronto de nuevo pa celebrar con alguito.</p>
+    </div>
   </div>
 
-  <script>
-    function entrar() {
-      window.location.href = "index.html";
-    }
-  </script>
+  <div id="move-cursor-notification" class="notification-overlay">
+    <div class="notification-card">
+      <p>...... MUEVE EL CURSOR ...... </p>
+    </div>
+  </div>
+
+  <audio id="background-audio" src="lingan-guli-wacha.mp3" loop autoplay muted></audio>
+
+  <script src="script.js"></script>
 </body>
 </html>
